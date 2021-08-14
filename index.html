@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Accordion Vanila Javascript</title>
+	<link href="style.css" rel="stylesheet"/>
+	<script src="script.js" defer></script>
+</head>
+<body>
+
+	<div class="box-accordion">
+		<h4>Accordion Knowledge About Tire by Iwan Prasetiyo</h4>
+		<button id="pt-accordion-id" class="pt-accordion active" style="font-weight: bold;">FAQ (Frequently Asked Questions)</button>
+		<div class="parent-panel" style="padding:0;display: block;">
+			<section>
+				<!-- Technical Product Only -->
+				<button class="bt-accordion">Mengapa ban TUBE TYPE tekanan anginnya lebih cepat penurunan dibandingkan ban TUBELESS ?</button>
+				<div class="accord-panel">
+					<p>Karena material pengganti TUBE yang terdapat pada ban TUBELESS yakni INNER LINER terbuat dari material khusus dengan pori-pori yang lebih rapat dan langsung menyatu dengan komponen ban lainnya sehingga kemampuan menyimpan tekanan anginnya semakin baik.</p>
+				</div>
+
+				<button class="bt-accordion">Mengapa ban habisnya tidak rata/bergelombang ?</button>
+				<div class="accord-panel">
+					<ul>
+						<li>Tekanan angin tidak standard dan dipakai terus menerus</li>
+						<li>Mengangkut beban berlebihan</li>
+						<li>Permukaan jalan yang tidak merata, rusak dan bergelombang</li>
+						<li>Metode dan gaya pengereman yang tidak selalu stabil</li>
+					</ul>
+				</div>
+
+				<button class="bt-accordion">Bisakah ban TUBELESS menggunakan BAN DALAM ( TUBE ) ?</button>
+				<div class="accord-panel">
+					<p>
+						Bisa, akan tetapi akan menyebabkan beberapa kerugian antara lain sebagai berikut :<br/>
+						- &nbsp;ban TUBELESS tidak lagi berfungsi sebagai penyimpan tekanan angin<br/>
+						- &nbsp;menambah biaya pembelian yang tidak perlu<br/>
+						- &nbsp;menambah beban putaran mesin melebihi yang seharusnya
+					</p>
+				</div>
+
+				<button class="bt-accordion">Apakah ban TUBELESS bisa digunakakan di velg jari-jari atau velg bukan TUBELESS ?</button>
+				<div class="accord-panel">
+				  <p>Bisa, tapi tidak dianjurkan dan harus menggunakan BAN DALAM ( TUBE ).</p>
+				</div>
+
+				<button class="bt-accordion">Apakah ban standard motor bisa diganti dengan ukuran lebih kecil ?</button>
+				<div class="accord-panel">
+					<p>Secara umum tidak disarankan mengganti ukuran ban standard dengan ukuran lebih kecil atau lebih besar, karena setiap desain motor pabrikan sudah diperhitungkan dengan teliti dan melalui berbagai pengujian untuk mendapatkan hasil performa dan keselamatan yang terbaik. Jika ingin mengganti ukuran ban yang lebih besar atau lebih kecil, sebaiknya hanya satu step saja, misalkan semula ukuran 80/90 ganti ke 90/90. Diluar itu harus melakukan penyesuaian rim/velg dan settingan kendaraan agar tetap safety.</p>
+				</div>
+
+				<button class="bt-accordion">Bagaimana cara membandingkan ban TUBE TYPE dan TUBELESS?</button>
+				<div class="accord-panel">
+					<ul>
+						<li>Untuk ban TUBE TYPE, pada dinding ban umumnya terdapat tulisan TUBE TYPE (ban-ban dengan ukuran inchi dan beberapa ban matriks tidak ada keterangan TUBE TYPE), dan pada permukaan bagian dalam ban terlihat jelas susunan benang-benang dari ply/kain ban nya.</li>
+						<li>Untuk ban TUBELESS, pada dinding ban terdapat tulisan TUBELESS, serta pada permukaan bagian dalamnya cenderung licin dan tidak terlihat benang ban karena terdapat lapisan inner liner (pengganti fungsi ban dalam.</li>
+					</ul>
+				</div>
+
+				<button class="bt-accordion">Apakah ada tanda/indikator kalau ban harus diganti ?</button>
+				<div class="accord-panel">
+					<p>Ada, yaitu jika keausan tapak ban sudah mencapai titik TWI (Tread Wear Indicator/Indikator Keausan Ban). TWI ditandai dengan lambang/penanda yang umumnya berbentuk segitiga di dinding ban dan pada bagian groove pattern/kembangan nya ada tongolan/tonjolan. Jika sudah mencapai tongolan tersebut maka ban sudah harus diganti. 
+					Terdapat masing-masing 4-6 lambang TWI pada dinding ban kiri dan kanan.</p>
+				</div>
+
+				<button class="bt-accordion">Apakah ada informasi ban tersebut bisa dipacu dengan kecepatan berapa dan sanggup menanggung beban berapa ?</button>
+				<div class="accord-panel">
+					<p>Setiap ban terdapat Load Index dan Speed Symbol, contoh 90/90-14 43P
+					43 : Ban tersebut sanggung menanggung beban 155kg
+					P : Ban tersebut bisa dipacu hingga 150km/jm
+					Untuk tabel standard Load Index dan Speed Symbol lainnya bisa digoogling di internet, yang mengacu pada buku-buku standard desain ban.</p>
+				</div>
+
+				<button class="bt-accordion">Apakah bisa menggunakan ban yang sudah banyak tambalan? Mengapa?</button>
+				<div class="accord-panel">
+					<p>Bisa, namun jika tambalan ban lebih dari satu dan berdekatan disarankan untuk ganti dengan ban baru karena potensi terjadinya kebocoran dan kerusakan ban sangat besar. Diantara kerusakan yang paling mungkin timbul karena banyaknya tambalan yang berdekatan adalah terjadinya pemisahan komponen ban (separation)</p>
+				</div>
+
+				<button class="bt-accordion">Berapa tekanan angin yang disarankan ?</button>
+				<div class="accord-panel">
+					<p>Secara umum <i>Ban depan : 29 psi</i>, <i>Ban Belakang : 33 psi</i> <br/>Tekanan tersebut bisa disesuaikan/diadjust 1-2 psi tergantung kenyamanan pengendara dan beban/load yang diangkut.</p>
+				</div>
+
+				<button class="bt-accordion">Apakah ban balap bisa digunakan untuk harian ?</button>
+				<div class="accord-panel">
+					<p>Bisa, tapi tidak disarankan karena terdapat beberapa potensi kerugian, sebagai berikut :<br/>
+						- &nbsp;Tapak ban akan lebih cepat aus dibandingkan ban regular karena karakter komponnya high grip dan lebih soft<br/>
+						- &nbsp;Umumnya ban balap lebih mahal dibandingkan dengan ban harian<br/>
+						- &nbsp;Relatif lebih boros bahan bakar karena dengan grip yang lebih tinggi akan meningkatkan gaya gesek yang berdampak pada beratnya tarikan dan besarnya energi yang dibutuhkan untuk menggerakkan motor
+					</p>
+				</div>
+
+				<button class="bt-accordion">Apakah ban Drag Bike ( ban cacing/size kecil ) bisa digunakan untuk harian ?</button>
+				<div class="accord-panel">
+					<p>Sangat tidak disarankan karena beberapa pertimbangan, antara lain :<br/>
+						- &nbsp;kontak area ban ke permukaan jalan sangat kecil yang mengakibatkan pengereman dan pembuangan air tidak maksimal<br/>
+						- &nbsp;Jenis compound nya di desain khusus untuk balapan<br/> 
+						- &nbsp;Profil bannya didesain khusus untuk track lurus, sehingga kurang safety untuk penggunaan harian yang tentunya harus banyak menikung dan bermanuver.
+					</p>
+				</div>
+
+				<button class="bt-accordion">Mengapa ban dipakai terasa oleng ?</button>
+				<div class="accord-panel">
+					<ul>
+						<li>Rim line yang terdapat di dinding ban tidak rata dengan rim/velg</li>
+						<li>Tekanan angin tidak standard</li>
+						<li>Kondisi shockbreaker sudah tidak standard</li>
+						<li>Kondisi velg yang tidak rata</li>
+						<li>Kondisi bearing pada motor sudah oblak</li>
+						<li>Kondisi keausan ban yang sudah tidak rata</li>
+					</ul>
+				</div>
+
+				<button class="bt-accordion">Apakah perbedaan ban BIAS dengan RADIAL ?</button>
+				<div class="accord-panel">
+					<ul>
+						<li>Untuk ban BIAS dengan kode "-", contoh : 110/70-17, untuk ban RADIAL dengan kode "R", contoh : 110/70 R17</li>
+						<li>Untuk ban BIAS lapisan Ply bersilangan, sedangkan untuk ban RADIAL lapisan Ply bertumpuk ( 0 derajat )</li>
+						<li>Keunggulan ban RADIAL lebih stabil jika digunakan terus menerus dan cocok untuk berkendara pada kecepatan tinggi, karena distribusi beban dan panas yang lebih baik</li>
+						<li>Keunggulan ban BIAS mampu menahan beban yang lebih berat</li>
+						<li>Ban RADIAL umumnya digunakan untuk motor sport, belum direkomendasikan untuk motor skutik dan underbone/bebek.</li>
+					</ul>
+				</div>
+
+				<button class="bt-accordion">Apakah perbedaan menggunakan Nitrogen dengan Udara biasa ?</button>
+				<div class="accord-panel">
+					<p>Beberapa keunggulan menggunakan Nitrogen dibanding udara biasa :<br/>
+						- &nbsp;Tekanan ban lebih stabil dibandingkan dengan udara biasa, karena temperatur udaranya juga lebih stabil dan molekul udaranya lebih besar dan padat. Hal ini juga berdampak positif pada pengendalian kendaraan yang lebih aman dan nyaman, serta membantu menjadikan ban lebih awet.<br/>
+						- &nbsp;Udara Nitrogen lebih bersih dari kandungan air, sehingga lebih aman dari korosi/karat <br/>
+						- &nbsp;Tarikan mesin menjadi lebih ringan karena molekul udara yang lebih besar namun ringan dapat menghasilkan bentuk ban yang lebih sempurna
+					</p>
+				</div>
+				
+			</section>
+		</div>
+	</div>
+
+</body>
+</html>
